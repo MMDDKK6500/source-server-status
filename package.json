@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/NikeGTeam/source-server-status/issues"
   },
-  "homepage": "https://github.com/NikeGTeam/source-server-status#readme"
+  "homepage": "https://github.com/NikeGTeam/source-server-status#readme",
+  "dependencies": {
+    "gamedig": "^2.0.23"
+  }
 }
