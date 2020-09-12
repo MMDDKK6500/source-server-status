@@ -1,0 +1,19 @@
+{
+  "name": "source-server-status",
+  "version": "1.0.0",
+  "description": "A NPM Package to retrieve the status of a Source Engine Game Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikeGTeam/source-server-status.git"
+  },
+  "author": "MMDDKK#6500",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/NikeGTeam/source-server-status/issues"
+  },
+  "homepage": "https://github.com/NikeGTeam/source-server-status#readme"
+}
