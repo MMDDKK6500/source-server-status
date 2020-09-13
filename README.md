@@ -1,9 +1,11 @@
-# source-server-status
+# source-server-status-helper
+Use with [node-gamedig](https://github.com/gamedig/node-gamedig)
 
-| Type | Game 
+
+| GameFolder | Game 
 |---|---
 | csgo | Counter-Strike: Global Offense
-| cs16 | Counter-Strike 1.6
+| cstrike | Counter-Strike 1.6
 | css | Counter-Strike: Source
 | dod | Day of Defeat
 | dods | Day of Defeat: Source

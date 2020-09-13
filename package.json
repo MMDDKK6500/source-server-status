@@ -1,22 +1,20 @@
 {
-  "name": "source-server-status",
+  "name": "source-server-status-helper",
   "version": "0.1.0",
-  "description": "A NPM Package to retrieve the status of a Source Engine Game Server",
+  "description": "A NPM Package to help with retrieved game status of a Source Engine Game Server",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NikeGTeam/source-server-status.git"
+    "url": "git+https://github.com/NikeGTeam/source-server-status-helper.git"
   },
   "author": "MMDDKK#6500",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/NikeGTeam/source-server-status/issues"
+    "url": "https://github.com/NikeGTeam/source-server-status-helper/issues"
   },
-  "homepage": "https://github.com/NikeGTeam/source-server-status#readme",
-  "dependencies": {
-    "gamedig": "^2.0.23"
-  }
+  "homepage": "https://github.com/NikeGTeam/source-server-status-helper#readme",
+  "dependencies": {}
 }
