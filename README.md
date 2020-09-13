@@ -16,11 +16,11 @@ helper.getRawServerState('csgo', '189.1.173.122', '27058', state => {
 
 ```
 
-| GameFolder | Game 
-|---|---
+| GameFolder | Game | Type(If different)
+|---|---|---
 | csgo | Counter-Strike: Global Offense
 | cstrike | Counter-Strike 1.6
-| css | Counter-Strike: Source
+| css | Counter-Strike: Source | cs16
 | dod | Day of Defeat
 | dods | Day of Defeat: Source
 | garrysmod | Garry's Mod
