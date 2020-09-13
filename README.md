@@ -1,6 +1,20 @@
-# source-server-status-helper
-Use with [node-gamedig](https://github.com/gamedig/node-gamedig)
+# source-server-status
 
+This is a package to help with gamedig Source Engine and GoldSrc game servers(Only works with these)
+
+Example:
+```javascript
+const helper = require('source-server-status')
+helper.getRawServerState('csgo', '189.1.173.122', '27058', state => {
+	console.log(state)
+	helper.ResolveSourceGame(state.raw.folder, game => {
+	console.log(game)
+	console.log(helper.getRandomGame())// gets a random game from the list
+	console.log(helper.getGameImage(game)) // give a GameName from ResolveSourceGame and gives an icon from the game
+	}) //returns Counter-Strike: Global Offensive
+})
+
+```
 
 | GameFolder | Game 
 |---|---
