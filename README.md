@@ -5,7 +5,7 @@ This is a package to help with gamedig Source Engine and GoldSrc game servers(On
 Example:
 ```javascript
 const helper = require('source-server-status')
-helper.getRawServerState('csgo', '189.1.173.122', '27058', state => {
+helper.getServerState('csgo', '189.1.173.122', '27058', state => {
 	console.log(state)
 	helper.ResolveSourceGame(state.raw.folder, game => {
 	console.log(game)
@@ -13,7 +13,6 @@ helper.getRawServerState('csgo', '189.1.173.122', '27058', state => {
 	console.log(helper.getGameImage(game)) // give a GameName from ResolveSourceGame and gives an icon from the game
 	}) //returns Counter-Strike: Global Offensive
 })
-
 ```
 
 | GameFolder | Game | Type(If different)

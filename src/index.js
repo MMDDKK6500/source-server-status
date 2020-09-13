@@ -1,5 +1,5 @@
 const Gamedig = require('gamedig');
-const getRawServerState = function (type, ip, port, callback) {
+const getServerState = function (type, ip, port, callback) {
 Gamedig.query({type: type, host: ip, port: port})
 .then((state) => {callback(state)})
 .catch((error) => {callback(error)});
@@ -10,8 +10,8 @@ const ResolveSourceGame = function (GameFolder, callback) {
 	let names = ['Team Fortress 2', 'Counter-Strike: Global Offensive', 'Counter-Strike: Source', "Garry's Mod",'Counter-Strike','Day of Defeat','Day of Defeat: Source','Half-Life 2: Deathmatch','Half-Life: Deathmatch','Half-Life: Deathmatch: Source','Left 4 Dead', 'Left 4 Dead 2', 'Team Fortress Classic'];
 	if (sourcegames.indexOf(GameFolder)===-1) {
 		callback("That's not a supported game!")
-	}else if(sourcegames.indexOf(GameFolder)!=-1){
-		callback(sourcegames.indexOf(GameFolder))
+	}else if(sourcegames.indexOf(GameFolder)!==-1){
+		callback(names[sourcegames.indexOf(GameFolder)])
 	}
 }
 const getGameImage = function (game) {
@@ -22,11 +22,10 @@ const getGameImage = function (game) {
 const getRandomGame = function () {
 	let names = ['Team Fortress 2', 'Counter-Strike: Global Offensive', 'Counter-Strike: Source', "Garry's Mod",'Counter-Strike','Day of Defeat','Day of Defeat: Source','Half-Life 2: Deathmatch','Half-Life: Deathmatch','Half-Life: Deathmatch: Source','Left 4 Dead', 'Left 4 Dead 2', 'Team Fortress Classic'];
 	var rnumber = Math.floor(Math.random() * (12 - 0 + 1)) + 0;
-	console.log(rnumber)
 	return names[rnumber]
 }
 module.exports = {
-	getRawServerState: getRawServerState,
+	getServerState: getServerState,
 	getRandomGame: getRandomGame,
 	ResolveSourceGame: ResolveSourceGame,
 	getGameImage: getGameImage
