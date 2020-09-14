@@ -1,7 +1,7 @@
 {
   "name": "source-server-status",
   "version": "1.0.0",
-  "description": "A NPM Package to help with retrieved game status of a Source Engine Game Server",
+  "description": "A NPM Package to help retrieve game status of a Source Engine/GoldSrc Game Server",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
