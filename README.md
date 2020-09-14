@@ -1,6 +1,6 @@
 # source-server-status
 
-This is a package to help with gamedig Source Engine and GoldSrc game servers(Only works with these)
+This is a package to help with retrieving Source Engine and GoldSrc game/community servers status(Only works with these)
 
 Example:
 ```javascript
