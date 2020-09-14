@@ -6,7 +6,7 @@ Example:
 ```javascript
 const helper = require('source-server-status')
 helper.getServerState('csgo', '189.1.173.122', '27058', state => {
-	console.log(state)
+	console.log(state) //https://github.com/gamedig/node-gamedig#return-value
 	helper.ResolveSourceGame(state.raw.folder, game => {  //returns Counter-Strike: Global Offensive
 	console.log(game)
 	console.log(helper.getRandomGame())// gets a random game from the list
